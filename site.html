@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Minha Vida 💘</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      overflow: hidden;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 25px;
+      max-width: 700px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      color: #e60073;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    strong {
+      color: #e60073;
+      font-weight: bold;
+    }
+
+    .heart {
+      font-size: 48px;
+      color: red;
+      margin-top: 25px;
+      animation: pulse 1.4s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    /* Corações de fundo */
+    .hearts-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .hearts-bg span {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 0, 100, 0.3);
+      animation: floatHearts 10s infinite ease-in;
+      clip-path: polygon(50% 0%, 61% 18%, 80% 18%, 100% 35%, 100% 55%, 75% 85%, 50% 100%, 25% 85%, 0% 55%, 0% 35%, 20% 18%, 39% 18%);
+      border-radius: 50%;
+    }
+
+    @keyframes floatHearts {
+      0% {
+        transform: translateY(100vh) scale(0.5) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.2) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .hearts-bg span:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .hearts-bg span:nth-child(2) { left: 25%; animation-delay: 2s; }
+    .hearts-bg span:nth-child(3) { left: 40%; animation-delay: 4s; }
+    .hearts-bg span:nth-child(4) { left: 55%; animation-delay: 1s; }
+    .hearts-bg span:nth-child(5) { left: 70%; animation-delay: 3s; }
+    .hearts-bg span:nth-child(6) { left: 85%; animation-delay: 5s; }
+
+  </style>
+</head>
+<body>
+  <div class="hearts-bg">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="container">
+    <h1>Para minha vida ❤️</h1>
+    <p>
+      Oi meu amor, tudo bem? Espero que sim. Faz muito tempo que não faço nada pra você, então aproveitei alguns momentos livres que eu tinha pra fazer esse site pra você.
+      <br><br>
+      Quero que você saiba que eu <strong>te amo muito, meu amor</strong>, bem muitão. E saiba que sou um homem muito feliz ao seu lado, e que <strong>sempre vou estar com você</strong> a qualquer momento que precisar.
+      <br><br>
+      Eu sei que nossa caminhada daqui pra frente não vai ser fácil, meu bem, mas eu <strong>prometo tentar fazê-la dar certo junto com você</strong>, pois você é a mulher da minha vida, com quem quero passar o resto de minhas vidas.
+      <br><br>
+      <strong>Eu te amo, meu amor 💖</strong><br>
+      <em>Finalmente namorando em kkkkk 😂</em><br>
+      Agora, meu amor... <strong>te vejo no altar 💍</strong>
+    </p>
+    <div class="heart">❤️</div>
+  </div>
+</body>
+</html>
